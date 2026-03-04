@@ -9,6 +9,10 @@ $kkk
 echo $kkk
 history
 history
+
+
+
+asd
 asdjhasd
 history
 bbbb
