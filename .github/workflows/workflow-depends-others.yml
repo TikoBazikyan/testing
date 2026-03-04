@@ -1,0 +1,15 @@
+name: Workflow Depends Others
+
+on: 
+  workflow_run:
+      workflows: ["C Shell Test", "Third Workflow"]
+      types:
+        - completed
+  
+jobs:
+  run-third-command:
+    runs-on:
+      ubuntu-latest
+    steps:
+      - name: Display some text
+        run: echo "Hello, World! after the other workflows!"
