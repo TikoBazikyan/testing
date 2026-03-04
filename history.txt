@@ -8,8 +8,6 @@ kss=qqq
 $kkk
 echo $kkk
 history
-mnba
-[A[A
 history
 asdjhasd
 history
