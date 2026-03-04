@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Display some text
         run: echo "Hello, World! from second workflow!"
-      - name: Display some second text
+      - name: Display some versions
         run: |
-          echo "Hello, from second workflow !!!!!!"
-          echo "Hello, from second workflow !!!!!kasdhkjasd!"
+          npm -v
+          node -v 

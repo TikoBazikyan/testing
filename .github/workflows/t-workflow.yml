@@ -1,0 +1,20 @@
+name: Third Workflow
+on: [push]
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Node version on Ubuntu
+        run: node -v 
+  run-parallel-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Display Node version on Windows
+        run: node -v
+  run-second-command:
+    runs-on: macos-latest
+    needs: run-first-command    
+    steps:
+      - name: Display Node version on MacOS
+        run: node -v
