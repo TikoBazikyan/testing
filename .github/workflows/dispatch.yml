@@ -12,11 +12,11 @@ on:
         type: choice
         required: true
         options:
-          - value 1
-          - value 2
-          - value 3
-          - value 4
-        default: "Value 2"
+          - Value 1
+          - Value 2
+          - Value 3
+          - Value 4
+        #default: "Value 2"
  
       checkCustom:
         description: Checkboxx
