@@ -1,0 +1,13 @@
+name: Scheduled workflow
+on:
+  schedule:
+    - cron: "*/2 * * * *"
+
+jobs:
+  every-2-mins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check versions
+        run: |
+          npm -v
+          node -v
