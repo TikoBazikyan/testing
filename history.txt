@@ -2,6 +2,8 @@
 qwr
 pwd
 cd ..
+wewq
+ade
 asd
 kkk=ww
 kss=qqq
@@ -9,9 +11,6 @@ $kkk
 echo $kkk
 history
 history
-
-
-
 asd
 asdjhasd
 history
