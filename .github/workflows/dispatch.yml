@@ -12,5 +12,6 @@ jobs:
   job_number_one:
     runs-on: ubuntu-latest
     steps:
-      - name: Version Testing
-        run: npm -v
+      - name: ECHO title
+        run: | 
+          echo "Title: ${{ inputs.titleCustom }}"
