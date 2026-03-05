@@ -16,7 +16,7 @@ on:
           - Value 2
           - Value 3
           - Value 4
-        #default: "Value 2"
+        default: "Value 2"
  
       checkCustom:
         description: Checkboxx
