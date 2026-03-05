@@ -1,0 +1,20 @@
+name: CI
+on:
+  push:
+    branches: [main]
+
+jobs:
+  testing:
+    runs-on: [self-hosted, aws, ec2]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Running Tests
+        run: | 
+          echo "Running Tests"
+          make test
+
+      - name: Shutdown Instance
+        if: always()
+        run: |
+          sudo shutdown -h +1
