@@ -1,0 +1,16 @@
+name: Dispatch button 
+on:
+  workflow_dispatch:
+    inputs:
+      titleCustom:
+        description: The input Dispatch
+        type: string
+        required: true
+        default: "Hiii "
+
+jobs:
+  job_number_one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Version Testing
+        run: npm -v
