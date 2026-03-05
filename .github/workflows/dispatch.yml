@@ -6,7 +6,22 @@ on:
         description: The input Dispatch
         type: string
         required: true
-        default: "Hiii "
+        default: "Hiii"
+      selectCustom:
+        description: Some description
+        type: choice
+        required: true
+        options:
+          - value 1
+          - value 2
+          - value 3
+          - value 4
+        default: "Value 2"
+ 
+      checkCustom:
+        description: Checkboxx
+        type: boolean
+        required: false
 
 jobs:
   job_number_one:
@@ -15,3 +30,5 @@ jobs:
       - name: ECHO title
         run: | 
           echo "Title: ${{ inputs.titleCustom }}"
+          echo "Title: ${{ inputs.selectCustom }}"
+          echo "Title: ${{ inputs.checkCustom }}"
