@@ -1,7 +1,7 @@
 name: Scheduled workflow
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   every-2-mins:
