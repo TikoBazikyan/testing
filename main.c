@@ -15,7 +15,7 @@ enum builtinCommands{PWD, CD, EXIT, SET, UNSET, ECHO, HELP, HISTORY};
     int his_index = 0;
     int key_index = 0;
     int quit = 1;
-
+    int Tigran_Mec = 1;
 
 
 // DECLARATION
